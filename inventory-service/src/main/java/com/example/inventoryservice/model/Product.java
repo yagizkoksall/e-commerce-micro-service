@@ -23,8 +23,6 @@ public class Product extends BaseModel{
     @ManyToMany
     private Set<Category> categories = new HashSet<>();
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE)
-    private List<Document> documents = new ArrayList<>();
 
     public Product() {
     }
